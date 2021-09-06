@@ -27,13 +27,13 @@
     Phase 1 is completed and phaze 2 will start i.e. code execution line by line.
  */
 var n = 2;
-function number(num) {
+function add(num) {
     var ans = num * num;
     return ans;
 }
 
-var square = number(n);
-var square2 = number(4);
+var addition = add(n);
+var addition_1 = add(4);
 
 
 
