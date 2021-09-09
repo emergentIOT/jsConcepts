@@ -44,3 +44,24 @@ var getAnotherName = () => {
     console.log(`This time i will be treated as variable, the above line will give UNDEFINED and below will print whole function`);
 }
 console.log(getAnotherName);
+
+
+/**
+ * Ways to define functions.
+ */
+
+// 1, it will store as it is.
+function hello() {
+    console.log(`Hello`);
+}
+
+// 2, it will allocate the memory as, hello: undefined
+var hello = () => {
+    console.log(`I am a arrow function but will be treated as variable, in terms of Execution context`);
+}
+
+// 3, it will allocate the memory as, hello: undefined
+var hello = function () {
+    console.log(`I will still be treated as variable`);
+} 
+
