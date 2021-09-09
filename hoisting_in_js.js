@@ -1,7 +1,11 @@
 
-console.log("Hoisting in Javascript");
+console.log(`Hoisting in Javascript`);
 /**
+ *  The process whereby the interpreter allocates
+ *  memory for variable and function declarations prior 
+ *  to execution of the code.
  * 
+ *  I can explain it with examples in browser.
  */
 
 /**
@@ -31,6 +35,7 @@ function getName() {
     console.log("Hoisting testing");
 
 }
+getName();
 console.log(x);
 console.log(getName);
 
