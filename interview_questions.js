@@ -57,5 +57,15 @@
  * 15. Code patterns ?
  * 16. What is JWT ?
  * 
+ * 17. Javascript event loop 
+ * 18. Mapreduce
+ * 19. Functional reactive programming
+ * 20. Singleton pattern
+ * 21. Datelist data structure
+ * 22. Graph databases 
+ * 23. Idempotency
+ * 24. server side rendering
+ * 25. Type safety
+ * 26. Dependency injections
  * 
  */
