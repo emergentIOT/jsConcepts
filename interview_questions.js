@@ -34,6 +34,9 @@
  *    eg: Username & password
  *        one time password 
  *        fingerprints
+ *    Authentication is a concept of validating user credentials and establishing 
+ *    the identity of the user.
+ * 
  * -  Authorization is a process where special permission grant to user and limited resources
  *    are alotted to user. Also known as access control or client proviledges.
  *    eg: Adding a user in group, giving admin rights to user.
@@ -43,10 +46,42 @@
  * 
  * Read More: https://www.okta.com/identity-101/authentication-vs-authorization/
  *    
- * 4. Single sign on ?
+ * 4. Single sign on (Authentication) : Implementations: OpenID, Facebook connect ?
+ * - When user tries to log in from a DOMAIN x --> Either user logs in or cookie is available
+ * - Sharing session information across different domains, thats what SSO does
+ * 
+ * Read More: https://auth0.com/blog/what-is-and-how-does-single-sign-on-work/
+ * 
  * 5. Difference between import & require ?
+ * 
  * 6. Dependency Injection ?
+ * - A dependency is a object that can be used as a service.
+ *      eg Class A is dependent on Class B, we have to create object of class to access its     
+ * * services. So, transferring the task of creating the objects to someone else and directly
+ *  using the dependency is called DI.
+ * 
+ * DI can be injected thorugh constructor & interface injection.  
+ * - Dependency can be injected at runtime rather than at compile time.
+ * 
+ * INVERSION OF CONTROL: concept behind DI
+ * 
+ * ****** Will add more *******
+ * 
  * 7. Layers in web app ?
+ * 
+ *  - Presentation layer: Represent the UI side of a web app, it has UI components that process * data and make it more readable form for humans.
+ * 
+ *  - Data service layer: Transmit data from processed by the Business logic layer to presentation
+ *    layer.
+ *      
+ *  - Business | Domain | Application logic layer: This layer is responsible for data exchange, which defines logic for business and rules. Logging is an example of business logic layer.
+ * 
+ * eg, took the request from user process it in the architecture and delivers it to required route.
+ * 
+ *  - Data Access layer: Access to persistent storage like binary or XML.
+ *  - Third party integrations.
+ * 
+ * 
  * 8. Solid principles  ?
  * 9. Exception handling and how to implement for mongodb & nodejs ?
  * 10. What is REST api & verbs ?
@@ -57,6 +92,8 @@
  * 15. Code patterns ?
  * 16. What is JWT ?
  * 
+ * Commonwealth Bank intervew finished.
+ * --------------------------------------------------------------------------------
  * 17. Javascript event loop 
  * 18. Mapreduce
  * 19. Functional reactive programming
@@ -67,5 +104,6 @@
  * 24. server side rendering
  * 25. Type safety
  * 26. Dependency injections
+ * 27. CORS
  * 
  */
