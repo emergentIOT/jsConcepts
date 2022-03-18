@@ -1,3 +1,18 @@
+#Extensions installed:
+- VS code javascript ES6 snippets
+- ES& React/Redux/Graphql/React-Native snippets
+
+## JSX Rules
+-   Always return single element
+-   Can use only one div or React.fragment(You need to import React for it) to wrap all html or jsx data
+-   className in place of class
+-   Need to close all open tags
+- 
+
+## Nested components
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
