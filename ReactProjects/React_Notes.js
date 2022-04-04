@@ -14,7 +14,12 @@
  *  - <h1 className=""></h1>
  *  - Tag should be closed
  * 
- * 4.
+ * 4. React Hooks
+ *  - useStateHooks() 
+ *      -> to get the data and hold it or to manage data
+ *      -> it returns array of two element
+ *      -> const[menuData(stateVariable), setMenuData] = useState(initialData);
+ *  
  * 
  * 
  * *****Autocomplete tags ******
