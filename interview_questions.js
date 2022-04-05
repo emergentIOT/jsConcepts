@@ -94,6 +94,16 @@
  * 
  * Commonwealth Bank intervew finished.
  * --------------------------------------------------------------------------------
+ * 
+ * ---------------------------------------------------------
+ * Nodejs & Js Interview with TCS
+ * - Benefits of Nodejs & express 
+ * - Difference between callbacks & promises & Async await 
+ * - Multip pe calls 
+ * - Non blocking I/O and event loop
+ * 
+ * 
+ * 
  * 17. Javascript event loop 
  * 18. Mapreduce
  * 19. Functional reactive programming
