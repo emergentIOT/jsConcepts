@@ -4,11 +4,11 @@
  * 
  * Where EC, is divided into two parts.
  * 
- *  1.Memory(Environment Variable) ---> PHAZE 1
+ *  1.Memory component(Environment Variable) ---> PHAZE 1
  *      - Where we save, key:value;
  *                       a = 10;
  *                       functions() {}
- *  2.Code (Thread of Execution) ---> PHAZE 2
+ *  2.Code component(Thread of Execution) ---> PHAZE 2
  *      - Code is executed line by line.
  */
 
@@ -40,7 +40,7 @@ function add(num) {
 // n is argument
 var addition = add(n);
 var addition_1 = add(4);
-
+console.log(addition);
 
 /**
  * Concept of CALL STACK, WHICH MANAGES THE ORDER OF EXECUTION OF EXECUTION CONTEXT

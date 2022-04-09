@@ -14,7 +14,7 @@
  *  - <h1 className=""></h1>
  *  - Tag should be closed
  * 
- * 4. React Hooks
+ * 4. React Hooks     ***********IMPORTANT***********
  *  - useStateHooks() 
  *      -> to get the data and hold it or to manage data
  *      -> it returns array of two element

@@ -102,6 +102,8 @@
  * - Multip pe calls 
  * - Non blocking I/O and event loop
  * 
+ * - What is hybrid or multi cloud 
+ * - Serverless.
  * 
  * 
  * 17. Javascript event loop 
