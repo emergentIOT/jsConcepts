@@ -1,6 +1,7 @@
 
 console.log(`Hoisting in Javascript`);
 /**
+ *  
  *  The process whereby the interpreter allocates
  *  memory for variable and function declarations prior 
  *  to execution of the code.
@@ -70,4 +71,5 @@ var hello = () => {
 var hello = function () {
     console.log(`I will still be treated as variable`);
 } 
+
 

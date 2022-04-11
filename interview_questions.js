@@ -1,5 +1,7 @@
 /**
- * Commonwealth Bank Of Australia, 04 Feb 2022 - Software Engineer
+ *------------------------------------------------------------------------------------------------
+ *                              CBA, 04 Feb 2022 - Software Engineer
+ * -----------------------------------------------------------------------------------------------
  * 
  * 1. Two types of encryption ?
  * 
@@ -11,7 +13,7 @@
  *              used to encrypt & decrypt.
  *              Public key is used to encrypt the message/data and private key is 
  *              used to decrypt the message.
- * -----------------------------------------------------------------------------------
+ * 
  * - Encryption vs Hashing
  *      Both job is to secure password.
  * 
@@ -92,19 +94,64 @@
  * 15. Code patterns ?
  * 16. What is JWT ?
  * 
- * Commonwealth Bank intervew finished.
- * --------------------------------------------------------------------------------
+ *
  * 
- * ---------------------------------------------------------
- * Nodejs & Js Interview with TCS
- * - Benefits of Nodejs & express 
- * - Difference between callbacks & promises & Async await 
- * - Multip pe calls 
- * - Non blocking I/O and event loop
+ * --------------------------------------------------------------------------------------
+ *                                     TCS NODEJS & JS
+ * --------------------------------------------------------------------------------------
+ *  1. Benefits of Nodejs & express 
+ *     - Node JS is an open suourse, cross paltform, backend javascript runtime that runs on v8, and execute js code outside of web browser.
+ *     - Can easily setup servers, to REQ & RES data from storage, reusable code, Asynchronous & 
+ * event driven .
+ *      Best suitable for: 
+ *          * Real time web streaming
+ *          * Chat applications
+ *          * Social media data access
+ *          * Writing apis
+ *          * Streaming applications
+ *          * NPM support for various packages
+ *          * Cross platform
  * 
- * - What is hybrid or multi cloud 
- * - Serverless.
+
  * 
+ * 2. Non blocking I/O or Asynchronous : Ref: https://medium.com/ing-blog/how-does-non-blocking-io-work-under-the-hood-6299d2953c74
+ *      Non blocking SINGLLE THREAD system,
+ *          * In a non bloacking system, waiter only takes order & serve order, do not wait or sits anywhere, He share his mobile number, to give a call back when order is ready. Similarly, he expect kitchen to callback when order is ready to serve.
+ * 
+ * -> Why non-blocking IO?
+ * Ans: 
+ *  
+ *  eg. Waiter manager three table in a kitchen, he took order from table one and deliver it to kitchen and now he is free and can get order from table 2 , and will only be call back when order is ready to serve.
+ *
+ *  --> event loop
+ * 
+ * 3. What is middleware
+ * Ans: Middleware is software that lies between an operating system and the applications running on it, middleware enables communication and data management for distributed applications. it connects two applications together so data and databases can be easily passed between the “pipe.”
+ * 
+ * 4. What is hybrid or multi cloud 
+ * Ans: Both "multi-cloud" and "hybrid cloud" refer to cloud deployments that integrate more than one cloud. They differ in the kinds of cloud infrastructure they include.
+ * 
+ * MULTI CLOUD: "Multi-cloud" refers to the combination and integration of multiple public clouds. A business may use one public cloud as a database, one as PaaS, one for user authentication, and so on.
+
+// If the multi-cloud deployment includes a private cloud or an on-premise data center as well, then the cloud deployment can actually be considered a hybrid cloud.
+
+// HYBRID CLOUD: A hybrid cloud combines public cloud computing with a private cloud or on-premise infrastructure. On-premise infrastructure can be an internal data center or any other IT infrastructure that runs within a corporate network.
+
+// Hybrid cloud deployments are fairly common. Some businesses migrate partly to the cloud but find it cost-prohibitive or too resource-intensive to move all the way, and as a result some processes, business logic, and data storage still take place in legacy on-premise infrastructure.
+ * 
+ * 5. Serverless.
+ * Ans:
+ * 
+ * 6. Difference between callbacks & promises & Async await 
+ * Ans:
+ * 7. How to handle multiple request 
+ * Ans:
+ * 8. Multiple calls 
+ * Ans:
+ * 
+ * ---------------------------------------------------------------------------------------
+ *                        SERVICE NSW - SOFTWARE ENGINEER, 11 APRIL 2022
+ * ---------------------------------------------------------------------------------------
  * 
  * 17. Javascript event loop 
  * 18. Mapreduce
