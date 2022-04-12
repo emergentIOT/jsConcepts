@@ -18,7 +18,9 @@
  *  - useStateHooks() 
  *      -> to get the data and hold it or to manage data
  *      -> it returns array of two element
- *      -> const[menuData(stateVariable), setMenuData] = useState(initialData);
+ *      -> const[menuData(stateVariable or currentdata), setMenuData] = useState(updatedFunction or to change value of state , eg menuData);
+ * 
+ * Hooks are used to manage your state in component.
  *  
  * 
  * 
