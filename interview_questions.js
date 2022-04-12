@@ -153,6 +153,12 @@
  *                        SERVICE NSW - SOFTWARE ENGINEER, 11 APRIL 2022
  * ---------------------------------------------------------------------------------------
  * 
+ * Question based on Array and Double array , inserting , iterating . 
+ * Findindex method
+ * 
+ * 
+ * 
+ * --------------------------------------------------------------------------
  * 17. Javascript event loop 
  * 18. Mapreduce
  * 19. Functional reactive programming

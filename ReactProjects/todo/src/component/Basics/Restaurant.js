@@ -2,26 +2,42 @@ import React, { useState } from 'react';
 import '../Basics/style.css';
 import Menu from './menuApi'
 import MenuCard from './MenuCard';
+import NavBar from './NavBar'
+
+//Get list of categories: unique
+const UniqueCategory = [...new Set(
+  Menu.map((currElem) => {
+    return currElem.category;
+  })
+), "All"];
 
 export const Restaurant = () => {
-
+  //useState is a hook should always be on top.
   const[menuData, setMenuData] = useState(Menu);  
+  const[menuList, setMenuList] = useState(UniqueCategory);
+
+  //Filter data based on cateogry
+  const filterItem = (category) => {
+    if(category === "All") {
+      setMenuData(Menu);
+      return;
+    }
+    const updatedList = Menu.filter((currElem) => {
+      return currElem.category === category
+    })
+    
+    setMenuData(updatedList);
+  }
 
   return (
     <>
-    <nav className='navbar'>
-        <div className='btn-group'>
-            <button className='btn-group__item'>Breakfast</button>
-            <button className='btn-group__item'>Lunch</button>
-            <button className='btn-group__item'>Evening</button>
-            <button className='btn-group__item'>Dinner</button>
-            <button className='btn-group__item'>All</button>
-        </div>
+    {/**PASSING PROPS THROUGH ATTRIBUTES */}
+    <NavBar filterItem={filterItem} menuList={menuList}/>
 
-    </nav>
+    {/**PASSING PROPS THROUGH ATTRIBUTES */}
     <MenuCard menuData={menuData} />
     </>
   )
 }
 
-//export default Restaurant""
+//export default Restaurant
