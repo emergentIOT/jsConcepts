@@ -15,13 +15,26 @@
  *  - Tag should be closed
  * 
  * 4. React Hooks     ***********IMPORTANT***********
- *  - useStateHooks() 
+ *  ------------- useStateHooks() ------------------
  *      -> to get the data and hold it or to manage data
  *      -> it returns array of two element
  *      -> const[menuData(stateVariable or currentdata), setMenuData] = useState(updatedFunction or to change value of state , eg menuData);
  * 
  * Hooks are used to manage your state in component.
- *  
+ * 
+ * -------------- useEffect() -------------------------
+ *     * By using this Hook, you tell React that your component needs to do something after render.
+ *  - useEffect(() => {
+ *      }, [])
+ * 
+ *  ------------------ useReducer ------------------------
+ *      /**
+            * dispatch is used to trigger your reducer function() and reducer will have the updated function through which we can change the value of state.
+        */
+    // const [state, dispatch] = useReducer(reducer, initialData);
+ 
+ 
+/*  
  * 
  * 
  * *****Autocomplete tags ******
