@@ -6,16 +6,14 @@ const reducer = (state, action) => {
         state = state + 1;
     }
 
-    if(action.type === "DECR") {
+    if(state > 0 && action.type === "DECR") {
         state = state - 1;
     }
     return state;
 }
 
 const UseReducer = () => {
-    const initialData = 7;
-    // const [myNum, setMyNum] = React.useState(initialData);
-
+    const initialData = 4;
     /**
      * dispatch is used to trigger your reducer function().
      * reducer will have the updated function through which we can change the value of state.
