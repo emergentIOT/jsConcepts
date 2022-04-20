@@ -1,14 +1,40 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './style.css'
+
+//get localStorage data
+const getLocalData = () => {
+    const lists = localStorage.getItem("myTodoList");
+
+    if(lists) {
+        return JSON.parse(lists);
+    } else {
+        return [];
+    }
+
+}
 
 const Todo = () => {
     const[inputData, setInputData] = useState("hello");
-    const[items, setItems] = useState([]);
+    const[items, setItems] = useState(getLocalData());
+    const[isEditItem, setIsEditItem] = useState();
+    const[toggleButton, setToggleButton] = useState(false);
 
     const addItem = () => {
         if(!inputData) {
             alert('Please fill the data');
-        } else {
+        } else if(inputData && toggleButton) {
+            setItems(items.map((curElem) => {
+                if(curElem.id === isEditItem) {
+                    return {...curElem, name: inputData}
+                }
+                return curElem;
+            })
+            )
+            setInputData([]);
+            setIsEditItem(null);
+            setToggleButton(false);
+        }
+         else {
             const myNewInputData = {
                 id : new Date().getTime().toString(),
                 name : inputData
@@ -16,6 +42,16 @@ const Todo = () => {
             setItems([...items, myNewInputData]);
             setInputData("");
         }
+    }
+
+    //edit item
+    const editItem = (id) => {
+        const item_todo_edited = items.find((curElem) => {
+            return curElem.id == id
+        })
+        setInputData(item_todo_edited.name);
+        setIsEditItem(id);
+        setToggleButton(true);
     }
 
     //Delete items
@@ -31,6 +67,11 @@ const Todo = () => {
         setItems([]);
     }
 
+    //Adding localStorage
+    useEffect(() => {
+        localStorage.setItem("myTodoList", JSON.stringify(items))
+    }, [items])
+
   return (
     <>
     <div className='main-div'>
@@ -42,7 +83,9 @@ const Todo = () => {
             <div className='addItems'>
                 <input type="text" placeholder='Add items' className='form-control' 
                 value={inputData} onChange={(event) => setInputData(event.target.value)} />
-                <i className='fa fa-plus' add-btn onClick={addItem}></i>
+                {/* if toggleButton is true  */}
+                {toggleButton ? (<i className='far fa-edit' add-btn onClick={addItem}></i>) : (<i className='fa fa-plus' add-btn onClick={addItem}></i>)}
+                
             </div>
             
             {/** show our items */}
@@ -52,7 +95,7 @@ const Todo = () => {
                         <div className='eachItem' key={curElem.id}>
                         <h3>{curElem.name}</h3>
                         <div className='todo-btn'>
-                           <i className='far fa-edit' add-btn></i>
+                           <i className='far fa-edit' add-btn onClick={() => editItem(curElem.id)}></i>
                            <i className='far fa-trash-alt' add-btn onClick={()=>deleteItem(curElem.id)}></i>
                         </div>
                   </div>
