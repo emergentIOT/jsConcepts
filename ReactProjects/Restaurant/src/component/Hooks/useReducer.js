@@ -1,5 +1,7 @@
 import React, { useReducer } from 'react'
 import '../Hooks/style.css'
+// Best for bigger projects
+
 
 const reducer = (state, action) => {
     if(action.type === "INCR") {
@@ -15,9 +17,10 @@ const reducer = (state, action) => {
 const UseReducer = () => {
     const initialData = 4;
     /**
-     * dispatch is used to trigger your reducer function().
-     * reducer will have the updated function through which we can change the value of state.
-     * initial data is same as useState()
+     * state: current state
+     * dispatch: dispatch is used to trigger your reducer function().
+     * reducer: reducer will have the updated function through which we can change the value of state.
+     * initialData: initial data is same as useState()
      */
     const [state, dispatch] = useReducer(reducer, initialData);
     

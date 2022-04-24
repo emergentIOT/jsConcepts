@@ -13,12 +13,15 @@ const getLocalData = () => {
 
 }
 
+//Todo Container
 const Todo = () => {
+    //HOOKS
     const[inputData, setInputData] = useState("hello");
     const[items, setItems] = useState(getLocalData());
     const[isEditItem, setIsEditItem] = useState();
     const[toggleButton, setToggleButton] = useState(false);
 
+    //add item
     const addItem = () => {
         if(!inputData) {
             alert('Please fill the data');

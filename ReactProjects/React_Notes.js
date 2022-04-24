@@ -14,18 +14,23 @@
  *  - <h1 className=""></h1>
  *  - Tag should be closed
  * 
- * 4. React Hooks     ***********IMPORTANT***********
+ *                                          ***********IMPORTANT***********
+ *                                          *******************************
+ *  * 4. React Hooks
  *  ------------- useStateHooks() ------------------
  *      -> to get the data and hold it or to manage data
  *      -> it returns array of two element
- *      -> const[menuData(stateVariable or currentdata), setMenuData] = useState(updatedFunction or to change value of state , eg menuData);
+ *      -> const[stateVariable (It is a Variable) , setMenuData (this is a function , which will update variable)] = useState(updatedFunction or to change value of state , eg menuData);
  * 
  * Hooks are used to manage your state in component.
  * 
  * -------------- useEffect() -------------------------
  *     * By using this Hook, you tell React that your component needs to do something after render.
- *  - useEffect(() => {
- *      }, [])
+ *     * It runs after every render
+ *     - useEffect(() => {
+ *          console.log("Hi");    or document.title = `${myNum}`
+ *      }, []) 
+ *      NOTE: if we remove array dependency , it will always run if we do any change or click in component.
  * 
  *  ------------------ useReducer ------------------------
  *      /**
